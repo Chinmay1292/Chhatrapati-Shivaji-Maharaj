@@ -239,3 +239,86 @@ def names(n,p):
         x, y = p[1][i]
         t.goto(x, y)
     t.end_fill()
+
+        #A
+    t.penup()
+    t.goto(-200, 320)
+    t.speed(5)
+    t.pendown()
+    t.color("gold")
+    t.begin_fill()
+
+    for i in range(len(n[6])):
+        x, y = n[6][i]
+        t.goto(x, y)
+    t.end_fill()
+
+    t.penup()
+    t.goto(-180, 300)
+    t.speed(5)
+    t.pendown()
+    t.color("orangered")
+    t.begin_fill()
+
+    for i in range(len(p[2])):
+        x, y = p[2][i]
+        t.goto(x, y)
+    t.end_fill()
+
+    #P
+    t.penup()
+    t.goto(-130, 320)
+    t.speed(5)
+    t.pendown()
+    t.color("#e6c60d")
+    t.begin_fill()
+
+    for i in range(len(n[7])):
+        x, y = n[7][i]
+        t.goto(x, y)
+    t.end_fill()
+
+    t.penup()
+    t.goto(-110, 300)
+    t.speed(5)
+    t.pendown()
+    t.color("orangered")
+    t.begin_fill()
+
+    for i in range(len(p[3])):
+        x, y = p[3][i]
+        t.goto(x, y)
+    t.end_fill()
+
+    #A
+    t.penup()
+    t.goto(-60, 320)
+    t.speed(5)
+    t.pendown()
+    t.color("#d9b51c")
+    t.begin_fill()
+
+    for i in range(len(n[8])):
+        x, y = n[8][i]
+        t.goto(x, y)
+    t.end_fill()
+
+    t.penup()
+    t.goto(-40, 300)
+    t.speed(5)
+    t.pendown()
+    t.color("orangered")
+    t.begin_fill()
+
+    for i in range(len(p[4])):
+        x, y = p[4][i]
+        t.goto(x, y)
+    t.end_fill()
+
+    #T
+    t.penup()
+    t.goto(10, 320)
+    t.speed(5)
+    t.pendown()
+    t.color("#cca42b")
+    t.begin_fill()
