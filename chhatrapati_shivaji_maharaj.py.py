@@ -322,3 +322,39 @@ def names(n,p):
     t.pendown()
     t.color("#cca42b")
     t.begin_fill()
+
+    for i in range(len(n[9])):
+        x, y = n[9][i]
+        t.goto(x, y)
+    t.end_fill()
+
+    #I
+    t.penup()
+    t.goto(80, 320)
+    t.speed(5)
+    t.pendown()
+    t.color("#bd903c")
+    t.begin_fill()
+
+    for i in range(len(n[10])):
+        x, y = n[10][i]
+        t.goto(x, y)
+    t.end_fill()
+
+
+part1Goto = (417,60)
+part2Goto = (362,-180)
+
+t.speed(15)
+wn = t.Screen()
+wn.screensize()
+wn.setup(width = 1.0, height = 1.0)
+sun()
+names(name,points)
+draw(corr)
+part(part1,part1Goto)
+
+part(part2,part2Goto)
+
+t.hideturtle()
+t.Screen().exitonclick()
