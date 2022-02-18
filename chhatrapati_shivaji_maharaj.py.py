@@ -104,3 +104,138 @@ points = [[(-390,300),(-370,300),(-370,270),(-390,270),(-390,300)],
           [(-180,300),(-160,300),(-160,270),(-180,270),(-180,300)],
           [(-110,300),(-90,300),(-90,270),(-110,270),(-110,300)],
           [(-40,300),(-20,300),(-20,270),(-40,270),(-40,300)]]
+
+def sun():
+    t.penup()
+    t.speed(5)
+    t.goto(420,-220)
+    t.pendown()
+    t.color("gold")
+    t.begin_fill()
+    t.circle(240)
+    t.end_fill()
+
+def draw(c):
+    t.penup()
+    t.speed(7)
+    t.goto(800,-210)
+    t.pendown()
+    t.color("black")
+    t.begin_fill()
+    for i in range(len(c)):
+        x, y = c[i]
+        t.goto(x, y)
+    t.end_fill()
+
+def part(p,g):
+    t.penup()
+    t.speed(6)
+    t.goto(g)
+    t.pendown()
+    t.color("gold")
+    t.begin_fill()
+    for i in range(len(p)):
+        x, y = p[i]
+        t.goto(x, y)
+    t.end_fill()
+
+def names(n,p):
+    #C
+    t.penup()
+    t.goto(-610,320)
+    t.speed(5)
+    t.pendown()
+    t.color("#fdfae5")
+    t.begin_fill()
+
+    for i in range(len(n[0])):
+        x, y = n[0][i]
+        t.goto(x, y)
+    t.end_fill()
+    #H
+    t.penup()
+    t.goto(-550, 320)
+    t.speed(5)
+    t.pendown()
+    t.color("#faf3c0")
+    t.begin_fill()
+
+    for i in range(len(n[1])):
+        x, y = n[1][i]
+        t.goto(x, y)
+    t.end_fill()
+    #H
+    t.penup()
+    t.goto(-480, 320)
+    t.speed(5)
+    t.pendown()
+    t.color("#f5ea92")
+    t.begin_fill()
+
+    for i in range(len(n[2])):
+        x, y = n[2][i]
+        t.goto(x, y)
+    t.end_fill()
+    #A
+    t.penup()
+    t.goto(-410, 320)
+    t.speed(5)
+    t.pendown()
+    t.color("#f3e260")
+    t.begin_fill()
+
+    for i in range(len(n[3])):
+        x, y = n[3][i]
+        t.goto(x, y)
+    t.end_fill()
+
+    t.penup()
+    t.goto(-390,300)
+    t.speed(5)
+    t.pendown()
+    t.color("orangered")
+    t.begin_fill()
+
+    for i in range(len(p[0])):
+        x, y = p[0][i]
+        t.goto(x, y)
+    t.end_fill()
+
+
+    #T
+    t.penup()
+    t.goto(-340, 320)
+    t.speed(5)
+    t.pendown()
+    t.color("#f5dd29")
+    t.begin_fill()
+
+    for i in range(len(n[4])):
+        x, y = n[4][i]
+        t.goto(x, y)
+    t.end_fill()
+
+    #R
+    t.penup()
+    t.goto(-270, 320)
+    t.speed(5)
+    t.pendown()
+    t.color("#f2d600")
+    t.begin_fill()
+
+    for i in range(len(n[5])):
+        x, y = n[5][i]
+        t.goto(x, y)
+    t.end_fill()
+
+    t.penup()
+    t.goto(-250, 300)
+    t.speed(5)
+    t.pendown()
+    t.color("orangered")
+    t.begin_fill()
+
+    for i in range(len(p[1])):
+        x, y = p[1][i]
+        t.goto(x, y)
+    t.end_fill()
